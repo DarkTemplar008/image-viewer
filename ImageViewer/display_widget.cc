@@ -80,7 +80,7 @@ void DisplayWidget::DrawBackground(QPainter* painter) {
     for (int i = 0; i < row; ++i) {
         for (int j = 0; j < column; ++j) {
             QRect item_rect(j * block_width, i * block_width, block_width, block_width);
-            painter->fillRect(item_rect, revert ? Qt::white : Qt::black);
+            painter->fillRect(item_rect, revert ? Qt::lightGray : Qt::darkGray);
             revert = !revert;
         }
     }

@@ -19,3 +19,7 @@ ImageViewer::ImageViewer(QWidget *parent)
         ui.display_widget->OpenImage(file_path);
     });
 }
+
+bool ImageViewer::OpenImage(const QString& path) {
+    return ui.display_widget->OpenImage(path);
+}

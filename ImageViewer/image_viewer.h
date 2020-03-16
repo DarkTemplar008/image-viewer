@@ -10,6 +10,8 @@ class ImageViewer : public QWidget
 public:
     ImageViewer(QWidget *parent = Q_NULLPTR);
 
+    bool OpenImage(const QString& path);
+
 private:
     Ui::ImageViewerClass    ui;
 };
